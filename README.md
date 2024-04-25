@@ -1,4 +1,4 @@
-SQLite3 Note Taker App with User Authentication
+#SQLite3 Note Taker App with User Authentication
 This project is a simple yet powerful note-taking application built using SQLite3 database for data storage and retrieval. Users can register, log in securely, create their own accounts, and store their notes conveniently. The application leverages Handlebars for dynamic views and seamless functionality. Developed with HTML, CSS, and JavaScript, this project offers a user-friendly interface and robust backend functionality.
 
 Features:
