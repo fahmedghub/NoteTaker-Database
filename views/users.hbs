@@ -1,0 +1,17 @@
+<h1>Users List</h1>
+<table>
+    <tr>
+        <th>id</th>
+        <th>username</th>
+        <th>password_hidden</th>
+        <th>admin</th>
+    </tr>
+    {{#each user_list}}
+    <tr>
+    <th>{{this.id}}</th>
+    <th>{{this.username}}</th>
+    <th>{{this.password_hidden}}</th>
+    <th>{{this.admin}}</th>
+    </tr>
+    {{/each}}
+</table>

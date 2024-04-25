@@ -1,0 +1,42 @@
+<h1>Your Personal Notes - Administrator</h1>
+<form action="/users">
+<button type="submit">Users List</button>
+</form>
+<br><br>
+<form action="/save" method="post">
+  <label for="data">Enter Note:</label>
+  <input type="text" id="data" name="data" required>
+  <br>
+  <button type="submit">Save</button>
+</form>
+<h2>Stored Notes:</h2>
+<ul>
+{{#each user_data}}
+  <li>{{this.data}}</li>  
+{{/each}}
+</ul>
+<br>
+
+{{!-- <h1>Your To-Do List</h1>
+
+<form action="/save-todo" method="post">
+  <label for="data">Today you need to:</label>
+  <input type="text" id="todo" name="todo" required>
+  <br>
+  <button type="submit">Save</button>
+</form> --}}
+
+{{!-- <table>
+  <tr>
+    <th>date</th>
+    <th>to-do</th>
+  </tr>
+
+  {{#each todo}}
+  <tr>
+    <th>{{this.date}}</th>
+    <th>{{this.todo}}</th>
+  </tr>
+  {{/each}}
+</table> --}}
+<a href="/logout">Logout</a>

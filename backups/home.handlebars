@@ -1,0 +1,14 @@
+<h2>Welcome, User!</h2>
+
+<form action="/add-entry" method="post">
+    <label for="entry">Enter Text:</label>
+    <input type="text" name="entry" id="entry" required>
+    <button type="submit">Submit</button>
+</form>
+
+<h3>Your Entries:</h3>
+<ul>
+    {{#each entries}}
+        <li>{{this.entry}} - {{this.timestamp}}</li>
+    {{/each}}
+</ul>
